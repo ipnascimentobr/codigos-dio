@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Restaurando o snapshot no VirtualBox (supondo que isso já foi feito manualmente)
+
+echo "Atualizando o servidor..."
+apt-get update
+apt-get upgrade -y
+
+echo "Instalando o Apache2..."
+apt-get install apache2 -y
+
+echo "Instalando unzip..."
+apt-get install unzip -y
+
+echo "Baixando e copiando os arquivos da aplicação..."
+
+# Vamos criar uma pasta temporária para download, se necessário
+mkdir -p /tmp/provisioning
+
+# Navegando para a pasta de download
+cd /tmp/provisioning
+
+# Baixando o arquivo zip da aplicação do GitHub
+wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
+
+# Descompactando o arquivo zip
+unzip -o main.zip
+
+# Entrando no diretório descompactado
+cd linux-site-dio-main
+
+# Copiando os arquivos da aplicação para o diretório padrão do Apache
+cp -R * /var/www/html/
+
+# Reiniciando o serviço Apache para aplicar as mudanças
+systemctl restart apache2
+
+echo "Provisionamento concluído."
