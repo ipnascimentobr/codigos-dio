@@ -1,14 +1,13 @@
-# Desafio 02 -  Instruções básica
-Este desafio tem como objetivo, criar um site basico no estilo wikipedia, com base no módulo 2 . Os temas abordados são:
+# Desafio 03 -  Instruções básica
+## Título: Recriando Wikipedia, com um layout melhor :)
+Objetivo
+Este desafio consiste em treinar você com relação a estrutura do site, e também aplicar conhecimentos adiquiridos sobre semântica e acessibilidade.
 
-Formulários
-Estruturação e formatação de texto
-Mídias
-Tabelas
-
-# Imagens adiqueridas de banco de imagens
-https://unsplash.com/pt-br
-https://br.freepik.com/
 
 # Observação
 Nessa atividade não tem foco no css.
+
+
+
+
+
