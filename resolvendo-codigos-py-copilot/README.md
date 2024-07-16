@@ -2,7 +2,7 @@
 Olá!! Aqui teremos algumas resoluções de códigos em python utilizando o Github Copilot.
 
 <strong>Atenção ⚠️</strong>
-os códigos forma gerados com Github Copilot, ChatGPT e Gemini foram usados como copiloto de estudos
+os códigos foram gerados com Github Copilot, ChatGPT e Gemini foram usados como copiloto de estudos
 
 ## 1 - Concatenando Dados 🐾
 Descrição: Vamos receber dois dados diferentes do usuário e concatena-los em uma única string?!
